@@ -5,8 +5,8 @@ const { expect } = require('chai')
 const { utils } = ethers
 
 const Utxo = require('../src/utxo')
-const { transaction, registerAndTransact, prepareTransaction, buildMerkleTree } = require('../src/index')
-const { toFixedHex, poseidonHash } = require('../src/utils')
+const { transaction, prepareTransaction } = require('../src/index')
+const { toFixedHex } = require('../src/utils')
 const { Keypair } = require('../src/keypair')
 const { encodeDataForBridge } = require('./utils')
 
